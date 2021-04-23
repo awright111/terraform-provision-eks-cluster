@@ -2,3 +2,6 @@
 
 This repo is a companion repo to the [Provision an EKS Cluster learn guide](https://learn.hashicorp.com/terraform/kubernetes/provision-eks-cluster), containing
 Terraform configuration files to provision an EKS cluster on AWS.
+
+To get EKS credentials:
+aws eks --region us-east-1 update-kubeconfig --name <EKS CLUSTER NAME>
