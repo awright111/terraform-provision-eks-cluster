@@ -5,6 +5,7 @@ variable "region" {
 
 provider "aws" {
   region = "us-east-1"
+   version = "2.66.0"
 }
 
 data "aws_availability_zones" "available" {}
@@ -20,7 +21,7 @@ resource "random_string" "suffix" {
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  # version = "2.66.0"
+   version = "2.66.0"
 
   name                 = "tf-eks-vpc"
   cidr                 = "10.0.0.0/16"
